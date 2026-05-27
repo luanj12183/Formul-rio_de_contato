@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Projeto - Arquivos</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #1e1e1e;
+            color: #ffffff; 
+            padding: 40px;
+        }
+        h2 {
+            color: #fff;
+            border-bottom: 1px solid #3c3c3c;
+            padding-bottom: 10px;
+            font-size: 24px;
+        }
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+        li {
+            display: flex;
+            align-items: center;
+            padding: 10px;
+            border-radius: 4px;
+            transition: background 0.2s;
+        }
+        li:hover {
+            background-color: #2a2d2e; 
+        }
+        
+        /* CORREÇÃO DO LINK PARA FICAR SEMPRE BRANCO */
+        a, a:visited, a:link {
+            color: #ffffff !important; 
+            text-decoration: none;
+            font-size: 18px;
+            flex-grow: 1;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        
+        /* Cor dos ícones ajustada para branco também */
+        i {
+            font-size: 16px; 
+            margin-right: 12px;
+            width: 24px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+    <h2>Explorador do Projeto</h2>
+    
+    <ul>
+        <li>
+            <i class="fa-regular fa-comments" style="color: #96d775;"></i>
+            <a href="./Contato">Contato</a> 
+        </li>
+        
+        <li>
+            <i class="fa-brands fa-html5" style="color: #e34c26;"></i>
+            <a href="./layout.html">layout.html</a>
+        </li>
+        
+        <li>
+            <i class="fa-brands fa-markdown" style="color: #58a6ff;"></i>
+            <a href="./README.md">README.md</a>
+        </li>
+    </ul>
+
+</body>
+</html>

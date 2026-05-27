@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layout Estruturado</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: sans-serif;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            background-color: #f0f2f5;
+        }
+
+        
+        header {
+            background-color: #333;
+            color: white;
+            padding: 1rem 5%;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+
+        main {
+            flex: 1;
+            padding: 40px 5%;
+            display: flex;
+            gap: 20px;
+        }
+
+        .card {
+            flex: 1;
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            text-align: center;
+            border: 1px solid #ddd;
+        }
+
+        
+        footer {
+            background-color: #222;
+            color: #999;
+            text-align: center;
+            padding: 1.5rem;
+        }
+
+       
+            @media (max-width: 768px) {
+            main {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <nav>
+            <a href="#">Início</a>
+            <a href="#">Sobre</a>
+            <a href="#">Serviços</a>
+            <a href="#">Contato</a>
+        </nav>
+    </header>
+
+    <main>
+        <div class="card">
+            <h3>Card 1</h3>
+            <p>Conteúdo do primeiro card flex: 1.</p>
+        </div>
+        <div class="card">
+            <h3>Card 2</h3>
+            <p>Conteúdo do segundo card Flex: 1.</p>
+        </div>
+        <div class="card">
+            <h3>Card 3</h3>
+            <p>Conteúdo do terceiro card Flex: 1.</p>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 - Todos os direitos reservados</p>
+    </footer>
+
+</body>
+</html>

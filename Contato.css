@@ -1,0 +1,33 @@
+
+.container {
+    background-color: #ffffff;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 100%; 
+    max-width: 400px;
+}
+
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+}
+
+
+.icon-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;    
+}
+
+.icon-container svg {
+    display: block;
+}
+
+
+input:focus, select:focus, textarea:focus {
+    border-color: #007bff; 
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.2);
+}
